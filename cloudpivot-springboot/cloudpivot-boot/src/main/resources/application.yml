@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: cloudpivot-boot
+server:
+  port: 8080

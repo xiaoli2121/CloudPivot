@@ -1,0 +1,8 @@
+{
+  "name": "@cloudpivot/portal-app",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "echo \"Portal app scaffold is reserved for the next step.\""
+  }
+}

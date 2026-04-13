@@ -1,0 +1,8 @@
+{
+  "name": "@cloudpivot/runtime-app",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "echo \"Runtime app scaffold is reserved for the next step.\""
+  }
+}

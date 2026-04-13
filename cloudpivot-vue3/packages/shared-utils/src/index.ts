@@ -1,0 +1,1 @@
+export const formatAppTitle = (title: string) => `CloudPivot - ${title}`

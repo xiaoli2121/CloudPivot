@@ -1,0 +1,9 @@
+﻿{
+  "name": "cloudpivot-uniapp",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev:h5": "echo \"Configure uni-app tooling before running dev:h5\"",
+    "build:h5": "echo \"Configure uni-app tooling before running build:h5\""
+  }
+}

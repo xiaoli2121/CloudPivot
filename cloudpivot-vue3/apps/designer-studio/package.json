@@ -1,0 +1,8 @@
+{
+  "name": "@cloudpivot/designer-studio",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "echo \"Designer studio scaffold is reserved for the next step.\""
+  }
+}

@@ -1,0 +1,10 @@
+﻿{
+  "name": "CloudPivot",
+  "appid": "__UNI__CLOUDPIVOT",
+  "description": "CloudPivot uni-app mobile starter",
+  "versionName": "0.1.0",
+  "versionCode": "100",
+  "mp-weixin": {
+    "appid": ""
+  }
+}
