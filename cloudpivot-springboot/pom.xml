@@ -20,21 +20,17 @@
 
   <properties>
     <java.version>21</java.version>
+    <mybatis-plus.version>3.5.15</mybatis-plus.version>
+    <shiro.version>2.0.1</shiro.version>
+    <shiro.classifier>jakarta</shiro.classifier>
+    <spring-boot.run.skip>true</spring-boot.run.skip>
   </properties>
 
   <modules>
     <module>cloudpivot-boot</module>
     <module>cloudpivot-common</module>
-    <module>cloudpivot-auth</module>
-    <module>cloudpivot-iam</module>
-    <module>cloudpivot-system</module>
-    <module>cloudpivot-metadata</module>
-    <module>cloudpivot-generator</module>
-    <module>cloudpivot-designer</module>
-    <module>cloudpivot-workflow</module>
-    <module>cloudpivot-rule</module>
-    <module>cloudpivot-integration</module>
+    <module>cloudpivot-platform</module>
+    <module>cloudpivot-engine</module>
     <module>cloudpivot-plugin</module>
-    <module>cloudpivot-tenant</module>
   </modules>
 </project>

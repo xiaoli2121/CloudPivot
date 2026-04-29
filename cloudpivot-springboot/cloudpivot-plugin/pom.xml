@@ -12,4 +12,22 @@
 
   <artifactId>cloudpivot-plugin</artifactId>
   <name>cloudpivot-plugin</name>
+
+  <dependencies>
+    <dependency>
+      <groupId>io.cloudpivot</groupId>
+      <artifactId>cloudpivot-common</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.shiro</groupId>
+      <artifactId>shiro-core</artifactId>
+      <version>${shiro.version}</version>
+      <classifier>${shiro.classifier}</classifier>
+    </dependency>
+  </dependencies>
 </project>
