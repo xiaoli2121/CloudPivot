@@ -1,0 +1,83 @@
+:root {
+  color-scheme: light;
+  font-family: "Bahnschrift", "Microsoft YaHei UI", sans-serif;
+  --bg: #faf5ee;
+  --panel: rgba(255, 255, 255, 0.88);
+  --line: rgba(63, 47, 23, 0.1);
+  --text: #2d271e;
+  --muted: #756852;
+  --brand: #a55c1b;
+  --accent: #145e59;
+  background:
+    linear-gradient(180deg, rgba(165, 92, 27, 0.08), transparent 18%),
+    radial-gradient(circle at top right, rgba(20, 94, 89, 0.1), transparent 25%),
+    var(--bg);
+  color: var(--text);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.portal-app {
+  min-height: 100vh;
+  padding: 28px 20px;
+}
+
+.portal-shell {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  gap: 20px;
+}
+
+.hero,
+.app-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  backdrop-filter: blur(12px);
+}
+
+.hero {
+  padding: 28px;
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--brand);
+}
+
+.hero h1 {
+  margin: 0;
+}
+
+.hero p,
+.app-card p {
+  color: var(--muted);
+}
+
+.app-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.app-card {
+  padding: 20px;
+}
+
+.runtime-link {
+  display: inline-flex;
+  margin-top: 12px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 700;
+}

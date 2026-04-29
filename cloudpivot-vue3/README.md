@@ -15,3 +15,14 @@ The frontend workspace is organized around application entrypoints and shared pa
 npm install
 npm run dev
 ```
+
+## Current Admin Shell Scope
+
+The current `admin-shell` now provides a first Community 1.0 management-console slice:
+
+- demo login flow
+- dashboard summary cards
+- user management view
+- role management view
+- metadata app center view
+- backend health and platform API integration through the Vite `/api` proxy

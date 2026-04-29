@@ -1,0 +1,219 @@
+:root {
+  color-scheme: light;
+  font-family: "Segoe UI Variable", "Microsoft YaHei UI", sans-serif;
+  --bg: #f3f5ef;
+  --panel: rgba(255, 255, 255, 0.84);
+  --panel-strong: #ffffff;
+  --line: rgba(19, 44, 38, 0.12);
+  --text: #1d2d2a;
+  --muted: #5f746e;
+  --brand: #136f63;
+  --brand-deep: #0a4c4b;
+  --accent: #d8a24d;
+  --danger: #b94f35;
+  background:
+    radial-gradient(circle at top left, rgba(216, 162, 77, 0.18), transparent 30%),
+    radial-gradient(circle at top right, rgba(19, 111, 99, 0.18), transparent 32%),
+    var(--bg);
+  color: var(--text);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.designer-app {
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.auth-shell,
+.studio-shell {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.auth-card,
+.panel,
+.hero-card,
+.component-card,
+.field-card {
+  backdrop-filter: blur(14px);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(17, 40, 35, 0.08);
+}
+
+.auth-card {
+  max-width: 440px;
+  margin: 10vh auto 0;
+  padding: 32px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--brand);
+}
+
+.lead {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.field,
+.toolbar-field {
+  display: grid;
+  gap: 8px;
+}
+
+.field {
+  margin-top: 16px;
+}
+
+.field input,
+.toolbar-field input,
+.toolbar-field select {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.primary-btn,
+.secondary-btn,
+.ghost-btn {
+  border: none;
+  border-radius: 999px;
+  padding: 12px 18px;
+  cursor: pointer;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover,
+.ghost-btn:hover {
+  transform: translateY(-1px);
+}
+
+.primary-btn {
+  margin-top: 18px;
+  width: 100%;
+  background: linear-gradient(135deg, var(--brand), var(--brand-deep));
+  color: white;
+  box-shadow: 0 14px 36px rgba(19, 111, 99, 0.24);
+}
+
+.secondary-btn {
+  background: linear-gradient(135deg, #f1d8a1, var(--accent));
+  color: #40290d;
+}
+
+.ghost-btn {
+  background: rgba(19, 111, 99, 0.08);
+  color: var(--brand);
+}
+
+.studio-shell {
+  display: grid;
+  gap: 20px;
+}
+
+.hero-card {
+  padding: 28px;
+  display: grid;
+  gap: 12px;
+}
+
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  color: var(--muted);
+}
+
+.hero-meta strong {
+  color: var(--text);
+}
+
+.studio-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1.4fr 1fr;
+}
+
+.panel {
+  padding: 24px;
+}
+
+.toolbar-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.toolbar-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.message {
+  margin-top: 16px;
+  color: var(--brand);
+}
+
+.component-list,
+.field-list {
+  display: grid;
+  gap: 14px;
+}
+
+.component-card,
+.field-card {
+  padding: 16px;
+  background: var(--panel-strong);
+}
+
+.component-card h4,
+.field-card h4,
+.panel h2,
+.hero-card h1 {
+  margin: 0;
+}
+
+.component-card p,
+.field-card p {
+  margin: 8px 0 0;
+  color: var(--muted);
+}
+
+.component-card code {
+  font-size: 12px;
+  color: var(--brand-deep);
+}
+
+@media (max-width: 960px) {
+  .studio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .toolbar-grid {
+    grid-template-columns: 1fr;
+  }
+}

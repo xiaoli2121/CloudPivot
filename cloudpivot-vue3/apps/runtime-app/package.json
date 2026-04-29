@@ -2,7 +2,10 @@
   "name": "@cloudpivot/runtime-app",
   "private": true,
   "version": "0.1.0",
+  "type": "module",
   "scripts": {
-    "dev": "echo \"Runtime app scaffold is reserved for the next step.\""
+    "dev": "vite --port 5175",
+    "build": "vite build",
+    "test": "vitest run"
   }
 }

@@ -1,0 +1,90 @@
+:root {
+  color-scheme: light;
+  font-family: "Trebuchet MS", "Microsoft YaHei UI", sans-serif;
+  --bg: #0f1917;
+  --panel: rgba(255, 255, 255, 0.08);
+  --line: rgba(255, 255, 255, 0.08);
+  --text: #edf6f3;
+  --muted: #b6cbc4;
+  --brand: #56c2a4;
+  --accent: #f0c36b;
+  background:
+    radial-gradient(circle at top right, rgba(86, 194, 164, 0.26), transparent 28%),
+    radial-gradient(circle at bottom left, rgba(240, 195, 107, 0.18), transparent 26%),
+    var(--bg);
+  color: var(--text);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.runtime-app {
+  min-height: 100vh;
+  padding: 32px 20px;
+}
+
+.runtime-shell {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  gap: 20px;
+}
+
+.hero,
+.component-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  backdrop-filter: blur(16px);
+}
+
+.hero {
+  padding: 28px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: var(--brand);
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 0 0 8px;
+}
+
+.hero p,
+.component-card p {
+  color: var(--muted);
+}
+
+.version-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(240, 195, 107, 0.16);
+  color: var(--accent);
+}
+
+.component-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.component-card {
+  padding: 20px;
+}
+
+.component-card ul {
+  padding-left: 18px;
+}

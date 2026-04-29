@@ -2,7 +2,10 @@
   "name": "@cloudpivot/designer-studio",
   "private": true,
   "version": "0.1.0",
+  "type": "module",
   "scripts": {
-    "dev": "echo \"Designer studio scaffold is reserved for the next step.\""
+    "dev": "vite --port 5174",
+    "build": "vite build",
+    "test": "vitest run"
   }
 }

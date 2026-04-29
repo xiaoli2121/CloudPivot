@@ -4,8 +4,12 @@
   "version": "0.1.0",
   "scripts": {
     "dev": "npm run dev --workspace @cloudpivot/admin-shell",
-    "build": "npm run build --workspace @cloudpivot/admin-shell",
-    "test": "npm run test --workspace @cloudpivot/admin-shell"
+    "dev:admin": "npm run dev --workspace @cloudpivot/admin-shell",
+    "dev:designer": "npm run dev --workspace @cloudpivot/designer-studio",
+    "dev:runtime": "npm run dev --workspace @cloudpivot/runtime-app",
+    "dev:portal": "npm run dev --workspace @cloudpivot/portal-app",
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present"
   },
   "workspaces": [
     "apps/*",

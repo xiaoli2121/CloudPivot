@@ -2,7 +2,10 @@
   "name": "@cloudpivot/portal-app",
   "private": true,
   "version": "0.1.0",
+  "type": "module",
   "scripts": {
-    "dev": "echo \"Portal app scaffold is reserved for the next step.\""
+    "dev": "vite --port 5176",
+    "build": "vite build",
+    "test": "vitest run"
   }
 }
